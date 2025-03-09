@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Project1</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+  <body>
+	<div id="box1">
+    			<img src="Images/LOGO.jpg.jpg" alt="logo" height="40px" width="47px">
+	    		<div id="box2">
+			<nav>
+        		<div class="Nav1">
+            			<a href="(WW)Home"> Home</a>
+                		<a href="mission.html">Mission</a>
+				<a href="information.html">Information</a>
+                		<a href="research.html">Research</a>
+               	 		<a href="aboutus.html">About us</a>
+				<a href="quiz.html" class="active">Simple Quiz</a>
+                	</div>
+			</nav>
+        		</div>
+        	<div id="box3">
+        		<div class="Nav">
+  				<input type="text" placeholder="Find...">
+			</div>
+		</div>
+        	<h4>WaterWeb: Deep Dive</h4>
+		<div class="box" id="box0"></div>
+		<audio controls loop>
+			<source src="underwater audio.mp3" type="audio/mpeg">
+			<source src="underwater audio.wav" type="audio/wav">
+		</audio>
+
+    	</div>
+
+    <div id="TestBox">
+      <form>
+        <div>
+          <h3>What type of water does the Antlatic ocean have?</h3>
+          <input type="radio" name="q1">Fresh water<br>
+          <input type="radio" name="q1" id="correct1">Salt water<br>
+          <input type="radio" name="q1">Ground water<br>
+          <input type="radio" name="q1">I don't know<br>
+        </div><br>
+        
+        <div>
+          <h3>Which of these animals are endagered?</h3>
+          <input type="radio" name="q2">Humans<br>
+          <input type="radio" name="q2">Gray Whale<br>
+          <input type="radio" name="q2" id="correct2">Green Sea Turtle<br>
+          <input type="radio" name="q2">Steller Sea Lion<br>
+        </div><br>
+        
+        <div>
+          <h3>Which of these animals are endagered?</h3>
+          <input type="radio" name="q3" id="correct3">Whale Shark<br>
+          <input type="radio" name="q3">Sardines<br>
+          <input type="radio" name="q3">Starfish<br>
+          <input type="radio" name="q3">Jellyfish<br>
+        </div><br>
+        
+        <div>
+          <h3>How much garbage is in the ocean?</h3>
+          <input type="radio" name="q4">0 trash is in the ocean<br>
+          <input type="radio" name="q4">About 6.1 billion pieces of plastic debris<br>
+          <input type="radio" name="q4">About 10 thousand peices of plastic debris<br>
+          <input type="radio" name="q4" id="correct4">About 5.25 trillion pieces of plastic debris<br>
+        </div><br>
+        
+        <div>
+          <h3>Possible way/s to rescue the endangered sea animal</h3>
+          <input type="radio" name="q5">Do nothing<br>
+          <input type="radio" name="q5" id="correct5">Habitat Conservation and Protection<br>
+          <input type="radio" name="q5">Destroy Homes of the endagered animals<br>
+          <input type="radio" name="q5">Consume more products that harm the endagered species enviroment<br>
+        </div><br>
+        
+        <button onclick="score()" id="result" class="btn">results</button>
+        <input type="reset" class="btn">
+      </form>
+    </div>
+    <script>
+      function score(){
+        var score = 0;
+        if(document.getElementById('correct1').checked){
+          score++;
+        }
+        if(document.getElementById('correct2').checked){
+          score++;
+        }
+        if(document.getElementById('correct3').checked){
+          score++;
+        }
+        if(document.getElementById('correct4').checked){
+          score++;
+        }
+        if(document.getElementById('correct5').checked){
+          score++;
+        }
+        let result = "You scored " + score + " out of 5";
+        let giveBack = message(score);
+	alert(result);
+	alert(giveBack);
+      }
+      
+      function message(x){
+        if(x>=4){
+          return "Great Job!";
+        }if(x>=2){
+          return "Nice one!";
+        }else{
+          return "It's ok";
+        }
+      }
+    </script>
+  </body>
+</html>
