@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS3 Project</title>
+		<link rel="stylesheet" type="text/css" href="styleWW.css">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	</head>
+	<body onload="collectInfo()">
+		<!--Home-->
+		<header class="nav">
+			<nav class="navbar">
+				<div class="bubble"></div>
+				<a href="HOME(WW_new).html"> Home</a>
+                		<a href="Missions.html">Missions</a>
+				<a href="Information.html">Information</a>
+                		<a href="Research.html">Research</a>
+               	 		<a href="AboutUs.html">About us</a>
+				<a href="littleQuiz.html">Quiz</a>
+				<a href="signUp.html">Sign-Up Form</a>
+				<div class="bubble"></div>
+			</nav>
+			<div class="find-sound">
+				<input type="text" placeholder="Fish 🪝" class="search">
+				<button id="playAudio" onclick="playmusic()">Want to play the background music?	🐠</button>
+   				<audio id="audio" loop>
+					<source src="music1.mp3" type="audio/mpeg">
+					<source src="music2.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+		</header>	
+
+		<h1>~~Your Aquafolio!~~</h1>
+		<div class="box">
+			<img src="profilePlaceholder.png" alt="[Profile Placeholder]" height="200px" id="pph">
+			<p id="name1"></p>
+			<p id="name2"></p>
+			<p id="emailAddress"></p>
+			<p id="sex"></p>
+			<p id="reasonOfSupport"></p>
+		</div>
+		
+		<script src="functionTime.js"></script>
+	<body>
+</html>

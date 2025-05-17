@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS3 Project</title>
+		<link rel="stylesheet" type="text/css" href="styleWW.css">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!--Sign up-->
+		<header class="nav">
+			<nav class="navbar">
+				<div class="bubble"></div>
+				<a href="HOME(WW_new).html"> Home</a>
+                		<a href="Missions.html">Missions</a>
+				<a href="Information.html">Information</a>
+                		<a href="Research.html">Research</a>
+               	 		<a href="AboutUs.html">About us</a>
+				<a href="littleQuiz.html">Quiz</a>
+				<a class="active" href="signUp.html">Sign-Up Form</a>
+				<div class="bubble"></div>
+			</nav>
+			<div class="find-sound">
+				<input type="text" placeholder="Fish 🪝" class="search">
+				<button id="playAudio" onclick="playmusic()">Want to play the background music?	🐠</button>
+   				<audio id="audio" loop>
+					<source src="music1.mp3" type="audio/mpeg">
+					<source src="music2.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+		</header>
+	
+		<h1>~~Sign-up for Project: Clean Water~~</h1>
+		<div class="box">
+			<p>What is Project: Clean Water? It is a campaign initiated by Greenpeace Philippines. Focusing on protecting and conserving the Philippines' 			fresh water sources. They also focused on improving water quality, reducing pollution, and making safe drinkable water accessaible. Working 			with communities and speading awareness towards the people to achieve their goal.</p>
+			<p>Feel free to volunteer by signing up their campaign, Project: Clean Water 💦</p>
+				
+			<form onsubmit="makeProfile(event)">
+    				<fieldset class="form">
+        				<legend><h2>Sign-Up Here!</h2></legend>
+       	 				<label for="Fname">First Name*:</label>
+        				<input type="text" id="Fname" name="Fname" required placeholder="Spongebob"><br><br>
+        				<label for="Lname">Last Name*:</label>
+        				<input type="text" id="Lname" name="Lname" required placeholder="Squarepants"><br><br>
+       				 	<b>Sex*:</b>
+        				<input type="radio" id="male" name="gender" value="male" required>
+        				<label for="male">Male</label>
+        				<input type="radio" id="female" name="gender" value="female" required>
+        				<label for="female">Female</label>
+        				<input type="radio" id="prefer not to say" name="gender" value="prefer not to say" required>
+       					<label for="prefer not to say">Prefer not to say</label>
+        				<br><br>
+        				<label for="email">Email*:</label>
+        				<input type="text" id="email" name="email" required placeholder="patrickStar@gmail.com"><br><br>
+					<label for="pw">Password*:</label>
+        				<input type="password" id="pw" name="pw" required placeholder="reduceUseOfPlastic123"><br><br>
+        				<label for="CN">Contact Number:</label>
+        				<input type="text" id="CN" name="CN" placeholder="0912345678"><br><br>
+					<label for="comment">Why are you supporting our campaign?*</label><br>
+					<textarea rows="10px" cols="40px" required for="comment" id="comment"></textarea><br><br>
+        				<a href="profile.html"><button type="submit" class="formbutton">Dive In ⚓︎</button></a>
+        				<button type="reset" class="formbutton">Swim Back 🛟</button>
+      				</fieldset>
+    			</form>
+		</div>
+		
+		<script src="functionTime.js"></script>
+	<body>
+</html>

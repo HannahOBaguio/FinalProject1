@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS3 Project</title>
+		<link rel="stylesheet" type="text/css" href="styleWW.css">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!--Quiz-->
+		<header class="nav">
+			<nav class="navbar">
+				<div class="bubble"></div>
+				<a href="HOME(WW_new).html"> Home</a>
+                		<a href="Missions.html">Missions</a>
+				<a href="Information.html">Information</a>
+                		<a href="Research.html">Research</a>
+               	 		<a href="AboutUs.html">About us</a>
+				<a class="active" href="littleQuiz.html">Quiz</a>
+				<a href="signUp.html">Sign-Up Form</a>
+				<div class="bubble"></div>
+			</nav>
+			<div class="find-sound">
+				<input type="text" placeholder="Fish 🪝" class="search">
+				<button id="playAudio" onclick="playmusic()">Want to play the background music?	🐠</button>
+   				<audio id="audio" loop>
+					<source src="music1.mp3" type="audio/mpeg">
+					<source src="music2.mp3" type="audio/mpeg">
+				</audio>
+			</div>
+		</header>
+	
+		<h1>~~Quiz!~~</h1>
+		<div class="box">
+			<div id="instructionBox">
+				<h2>Instructions:</h2>
+				<ul>
+					<li>The user is given 5 questions to answer. (The questions are multiple choice)</li>
+					<li>Each question having 4 options.</li>
+					<li>The user's score will be shown after the quiz has finished.</li>
+					<li>When the user gets a score of 3 and above points. The given message will be "Good Job⭐"</li>
+					<li>When the user gets a score of 0 to 2 points. The given message will be "It's Ok⚓️"</li>
+					<li>If the user would like to submit, press "Dive In". </li>
+					<li>If the user would like to reset, press "Swim Back". </li>
+					<li>Theres no timer for this quiz (so take your time), and no worries on getting the wrong option.</li>
+				</ul>
+			</div>
+			<form onsubmit="result()">
+				<div class="question">
+					<h3>Q1. What type of water does the Antlatic ocean have?</h3>
+					<input type="radio" name="q1">Fresh water<br>
+          				<input type="radio" name="q1" id="correct1">Salt water<br>
+          				<input type="radio" name="q1">Ground water<br>
+          				<input type="radio" name="q1">I don't know<br>
+				</div>
+
+				<div class="question">
+					<h3>Q2. Which one of these organizations does NOT focus on conserving water?</h3>
+					<input type="radio" name="q2">Oceana<br>
+          				<input type="radio" name="q2">PADI AWARENESS Foundation<br>
+          				<input type="radio" name="q2">Ocean Conservation<br>
+        	  			<input type="radio" name="q2" id="correct2">Blue Lock<br>
+				</div>
+	
+				<div class="question">
+					<h3>Q3. Which one of these animals are endagered?</h3>
+					<input type="radio" name="q3" id="correct3">Blue Whales<br>
+          				<input type="radio" name="q3">Humans<br>
+          				<input type="radio" name="q3">Giraffe<br>
+          				<input type="radio" name="q3">Maya Bird<br>
+				</div>
+		
+				<div class="question">
+					<h3>Q4. Which one of these ecosystems are found in oceans?</h3>
+					<input type="radio" name="q4">Grasslands<br>
+          				<input type="radio" name="q4" id="correct4">Coral Reefs<br>
+          				<input type="radio" name="q4">Forests<br>
+          				<input type="radio" name="q4">Deserts<br>
+				</div>
+
+				<div class="question">
+					<h3>Q5. Is establishing a marine protected area (MPA) effective for water conservation?</h3>
+					<input type="radio" name="q5">No<br>
+          				<input type="radio" name="q5">Maybe<br>
+          				<input type="radio" name="q5" id="correct5">Yes<br>
+          				<input type="radio" name="q5">I don't know<br>
+				</div>
+						
+				<button type="submit" class="formbutton">Dive In ⚓︎</button>
+        			<button type="reset" class="formbutton">Swim Back 🛟</button>
+			</form>
+		</div>
+
+		
+		<script src="functionTime.js"></script>
+	<body>
+</html>
